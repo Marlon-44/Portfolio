@@ -343,4 +343,18 @@ header{
         padding: 10px 15px;
         font-size: 14px;
     }
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0; /* Asegura que el fondo se mantenga */
+    }
+    
+    /* Ocultar todas las listas de navegación excepto la primera */
+    .nav__list:not(:first-of-type) {
+        display: none;
+    }
+    .content p{
+        width: 70%;
+    }
+
 }

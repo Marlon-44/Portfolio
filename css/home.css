@@ -139,6 +139,8 @@ header{
     top: 0;
     gap: 50px;
     margin-left: 80px;
+    flex-shrink: 1;
+    flex-grow: 1;
     
 
 }
@@ -398,6 +400,115 @@ button {
     right: 0;
 }
 
+.footer {
+    display: flex;
+    background-color: #001318; /* Fondo blanco */
+    text-align: center; /* Centrar el texto */
+    padding: 10px 0; /* Espaciado en la parte superior e inferior */
+    font-size: 14px; /* Tamaño de fuente pequeño */
+     /* Línea superior con estilo "dálmata" */
+    color: #fff; /* Clor del texto */
+    min-height: 8vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.simple-footer p {
+    margin: 0; /* Elimina el margen del párrafo */
+    align-self: center;
+}
+
+@media screen and (max-width: 700px){
+    
+    /* Navegación */
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0; /* Asegura que el fondo se mantenga */
+    }
+    
+    /* Ocultar todas las listas de navegación excepto la primera */
+    .nav__list:not(:first-of-type) {
+        display: none;
+    }
+
+    /* Sección Principal */
+    .main__section{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Títulos Principales */
+    .main__titles{
+        width: 100%;
+        margin: 30px 0;
+        padding: 0 15px;
+        text-align: center;
+    }
+
+    .main__titles div{
+        width: 100%;
+    }
+
+    /* Imagen Principal */
+    .main__section img{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    /* Botón */
+    .pixel_btn {
+        padding: 10px 15px;
+        font-size: 16px;
+        width: 80%;
+        align-self: center;
+    }
+
+    /* Sección de Redes Sociales */
+    .social-media__section {
+        margin: 0;
+        padding: 0;
+    }
+
+    .social-media__list {
+        justify-content: center;
+        gap: 10px;
+    }
+    img, svg {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    .main__titles h1{
+        font-size: 4em;
+    }
+    .main__section h2{
+        font-size: 2em;
+    }
+    .main__titles h3{
+        display: none;
+    }
+    .skills__section__titles{
+        text-align: center;
+        width: 100%;
+        padding: 30px 0 50px;
+    }
+
+    .skills__box__container{
+        flex-direction: column;
+    }
+
+    .projects__section__titles{
+        text-align: center;
+    }
+    .projects__section__titles p{
+        max-width: 100%;
+    }
+}
 
 /* Estilo del scrollbar */
 
