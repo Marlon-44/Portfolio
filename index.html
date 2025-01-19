@@ -147,33 +147,31 @@
                 </p>
                 <a class="pixel_btn" href="projects.html">Go To Projects</a>
             </div>
-            <!--<section class="slider-container">
-                <div class="slider">
-                    <div class="slide active">
-                        <img src="../assets/waos.png" alt="Imagen 1">
-                    </div>
-                    <div class="slide">
-                        <img src="../assets/waos.png" alt="Imagen 2">
-                    </div>
-                    <div class="slide">
-                        <img src="../assets/bg1.png" alt="Imagen 3">
-                    </div>
-                </div>
-                <button class="prev" onclick="prevSlide()">Prev</button>
-                <button class="next" onclick="nextSlide()">Next</button>
-            </section>-->
+            
             
         </section>
         
-        <section class="contact__section">
-            
+
+        <section class="hireme__section">
+            <form action="send_email.php" method="POST">
+                <h2>Contact <span>Me</span></h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                
+                <button class="send__email__btn" type="submit">Send </button>
+            </form>
         </section>
-        
         
             
     </main>
     <footer class="footer">
-        <p>&copy; 2024 Todos los derechos reservados. Marlon Almanza</p>
+        <p>&copy; 2025 Todos los derechos reservados. Marlon Almanza</p>
     </footer>
     <script src="js/app.js"></script>
     <script src="js/prueba.js"></script>

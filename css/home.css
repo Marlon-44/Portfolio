@@ -8,6 +8,7 @@ html,body{
     padding: 0;
     margin: 0;
     scroll-behavior: auto;
+    font-family: "exo 2", sans-serif;
 }
 *{
     box-sizing: border-box;
@@ -381,16 +382,7 @@ figure.skill:hover img {
     border-radius: 10px; /* Opcional, para darle un borde redondeado a las imágenes */
 }
 
-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #00ffcc;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10; /* Para asegurarnos de que los botones estén siempre por encima del slider */
-}
+
 
 .prev {
     left: 0;
@@ -418,6 +410,61 @@ button {
     align-self: center;
 }
 
+.hireme__section{
+    display: flex;
+    padding: 40px;
+    text-align: center;
+}
+
+.hireme__section form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+}
+
+.hireme__section form input{
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #00b8b8;
+    color: #00b8b8;
+    font-size: 16px;
+    font-weight: 400;
+    flex: 1 1 0;
+}
+.hireme__section form textarea{
+    padding: 10px;
+    min-height: 200px;
+    background-color: transparent;
+    border: 1px solid #00b8b8;
+    color: #00b8b8;
+    font-size: 16px;
+    font-weight: 400;
+    resize: none;
+    flex: 1 1 0;
+}
+.send__email__btn{
+    width: 50%;
+    align-self: center;
+    margin-top: 20px;
+    padding: 20px 0;
+    clip-path: polygon(
+        20px 0, calc(100% - 20px) 0, 100% 20px, 100% calc(100% - 20px), 
+        calc(100% - 20px) 100%, 20px 100%, 0 calc(100% - 20px), 0 20px
+    );
+    background-color: #00ffff;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    flex: 1 1 0;
+}
+.send__email__btn:hover{
+    background-color: #009191;
+    color: #fff;
+}
 @media screen and (max-width: 700px){
     
     /* Navegación */
